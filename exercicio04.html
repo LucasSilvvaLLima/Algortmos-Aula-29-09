@@ -30,24 +30,24 @@
         Já é um idoso: resposta3 <br>
         `
         if (infacia) {
-            mensagem =`${mensagem.replaceAll('resposta1', `${infacia}`)}`
+            mensagem = mensagem.replaceAll('resposta1', `${infacia}`)
             pontos += 10
         }else{
-            mensagem =`${mensagem.replaceAll('resposta1', `${infacia}`)}`
+            mensagem = mensagem.replaceAll('resposta1', `${infacia}`)
         }
         
         if (adolecencia) {
-            mensagem =`${mensagem.replaceAll('resposta2', `${adolecencia}`)}`
+            mensagem = mensagem.replaceAll('resposta2', `${adolecencia}`)
             pontos += 20            
         } else {
-            mensagem =`${mensagem.replaceAll('resposta2', `${adolecencia}`)}`
+            mensagem = mensagem.replaceAll('resposta2', `${adolecencia}`)
         }
         
         if (idoso) {
-            mensagem =`${mensagem.replaceAll('resposta3', `${idoso}`)}`
+            mensagem = mensagem.replaceAll('resposta3', `${idoso}`)
             pontos += 50            
         } else {
-            mensagem =`${mensagem.replaceAll('resposta3', `${idoso}`)}`
+            mensagem = mensagem.replaceAll('resposta3', `${idoso}`)
         }
 
         div_estagios.innerHTML = `${mensagem} TOTAL DE PONTOS: ${pontos}`
